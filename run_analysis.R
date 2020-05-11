@@ -36,12 +36,12 @@ tidy_data<-cbind(tmp,tidy_data)
 names(tidy_data)[1]<-"Activity"
 
 #-----------------------------------------------------------------------------------------------------------------
-#####Step5: Appropriately labels the data set with descriptive variable names.
+#####Step4: Appropriately labels the data set with descriptive variable names.
 
 #Already appropriately named in steps above. also refer codebook to interpret the colnames.
 
 #-----------------------------------------------------------------------------------------------------------------
-#####Step6: From the data set in step 4, creates a second, independent tidy data set with the average of each 
+#####Step5: From the data set in step 4, creates a second, independent tidy data set with the average of each 
 #           variable for each activity and each subject. We will call this tidy_avg.
 
 tidy_avg<-tidy_data %>% group_by(Subject_Code,Activity) %>% summarise_all(funs(mean))
