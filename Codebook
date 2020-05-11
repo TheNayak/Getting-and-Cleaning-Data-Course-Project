@@ -81,7 +81,7 @@ Some interpretations:
 
 4) The X_test.txt and X_train.txt contain variables based on the colomn names in the features.txt file.
 
-5) The y_test.txt and y_train.txt contain the activity codes for each observation.
+5) The y_test.txt and y_train.txt contain the activity codes (1-6) for each observation.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 The interpretation of the R script...
 
