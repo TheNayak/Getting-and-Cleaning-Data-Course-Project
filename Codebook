@@ -1,9 +1,9 @@
 This Codebook will explain the interpretation of all the variable names and data manipulations in the R script run_analysis.R and 
 the final step text file submission (tidy_average.txt).
-
+------------------------------------------------------------------------------------------------------------------------------------------------------
 Have a look at the run_analysis.R script, 
 For the script to run you will have to read and assign the following eight files (raw data;Space seperated variables) to the
-following variables:
+following variables:(I have not added code to read the files as I won't know where you will have stored the files!)
 
 1)activity_labels.txt        ---->        activity_labels    (6 rows 2 colomns)
 2)features.txt               ---->        features           (561 rows 2 colomns)
@@ -13,7 +13,7 @@ following variables:
 6)X_train.txt                ---->        X_train            (7352 rows 561 colomns)
 7)y_test.txt                 ---->        y_test             (2947 rows 1 variable)
 8)y_train.txt                ---->        y_train            (7352 rows 1 variable)
-
+------------------------------------------------------------------------------------------------------------------------------------------------------
 Some interpretations:
 1)activity_labels.txt has 6 different activities and its code as follows:
   1 WALKING
@@ -82,3 +82,32 @@ Some interpretations:
 4) The X_test.txt and X_train.txt contain variables based on the colomn names in the features.txt file.
 
 5) The y_test.txt and y_train.txt contain the activity codes for each observation.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+The interpretation of the R script...
+
+Step1: Here the dplyr package is initialised and [X_test and X_train],[y_test and y_train],[subject_test and subject_train] and features
+       are appropriately combined to give merged_data.
+Step2: Here we are selecting first two coloms along with colomns that have the strings "mean" or "std" in the colomn names 
+       of merged_data and assigning the new dataset to tidy_data.
+Step3: Here we use the activity codes of each row to create a new coloms containing activity names based on the activity codes.
+Step5: Here we summarise the tidy_data by grouping by subject_code and Activity and taking the mean of each colomn. and the resulting
+       dataset is written to a text file tidy_avg.txt which is available in the repository for ypur reference.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
