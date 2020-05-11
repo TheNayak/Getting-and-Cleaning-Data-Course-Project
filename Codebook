@@ -93,7 +93,9 @@ Step3: Here we use the activity codes of each row to create a new coloms contain
 Step5: Here we summarise the tidy_data by grouping by subject_code and Activity and taking the mean of each colomn. and the resulting
        dataset is written to a text file tidy_avg.txt which is available in the repository for ypur reference.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-       
+The final submission is the text file tidy_data.txt which contains data summarised as follows:
+each subject (1-30) has done six activities and the colomns have the mean for all those activities under the respective colomn names.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
        
        
        
