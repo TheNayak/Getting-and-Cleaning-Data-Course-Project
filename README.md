@@ -6,5 +6,5 @@ The repository contains four files:
 3)run_analysis.R : The R script used to obtain tidy data.
 4)tidy_avg.txt : the final submission.
 
-##Please have a look at the codebook while going thru the R script.
+Please have a look at the codebook while going thru the R script.
   
