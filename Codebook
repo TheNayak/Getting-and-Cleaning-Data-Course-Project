@@ -77,4 +77,8 @@ Some interpretations:
    tBodyGyroMean
    tBodyGyroJerkMean
 
-3) The subject_test.txt and subject_train
+3) The subject_test.txt and subject_train.txt contain values fron 1-30 that represent the particular human subject taking the test.
+
+4) The X_test.txt and X_train.txt contain variables based on the colomn names in the features.txt file.
+
+5) The y_test.txt and y_train.txt contain the activity codes for each observation.
